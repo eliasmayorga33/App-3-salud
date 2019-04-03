@@ -22,10 +22,30 @@
 
 <script src="phonegap.js"></script><!--necesario*/-->
 <script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
 
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
 </script>
 </head>
-<body onLoad="MM_preloadImages('imagenes/img 1-7/img-5.jpg')">
+<body onLoad="MM_preloadImages('imagenes/img 1-7/img-5.jpg','imagenes/img-1.png','imagenes/img-7.jpg','imagenes/img-8.jpg','imagenes/img-11.jpg')">
 <div data-role="page" id="principal" data-theme="a">
 <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar">
 <h1> DIA MUNDIAL DE LA SALUD 7 DE ABRIL </h1>
@@ -140,8 +160,7 @@ Es así como el Día Mundial de la Salud se erigió como el primer acto oficial 
 
 Según la Organización, elegir un tema y lema diferente para la celebración anual cumple una función importante: permite central la atención mundial en importantes temas de salud pública que están afectando a la comunidad internacional.
     </p>
-	<img src="imagenes/img-2.jpg" width="50%" height="30%" alt="mod1">
-    <img src="imagenes/img-1.png" width="50%"  height="30%" alt="mod1">
+    <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image44','','imagenes/img-1.png',1)"><img src="imagenes/img-2.jpg" width="70%" height="50%" id="Image44"></a> 
     </div>
     <a href="https://seguimiento.co/mundo/por-que-se-celebra-el-dia-mundial-de-la-salud-5376"><p align="center">Si quieres saber mas</p></a>
     </div>
@@ -227,8 +246,7 @@ Cabe mencionar que este órgano tiene una serie de funciones, cuya finalidad es 
 <li> Estar al corriente de las diferentes situaciones que existan en temas referentes a la salud y marcar cuáles son las tendencias recomendadas, impulsando también su implementación en los diversos países.</li>
 </ul>
     </p>
-	<img src="imagenes/img-6.jpg" width="70%" height="50%" alt="mod3">
-    <img src="imagenes/img-7.jpg" width="70%" height="50%" alt="mod3">
+    <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image43','','imagenes/img-7.jpg',1)"><img src="imagenes/img-6.jpg" width="70%" height="50%" id="Image43"></a> 
     </div>
     <a href="https://definicion.de/oms/"><p align="center">Si quieres saber mas</p></a>
     </div>
@@ -255,8 +273,7 @@ Proteger a las personas de las consecuencias financieras que puede tener el pago
 
 Lograr la CSU es una de las metas que se fijaron los países que adoptaron los Objetivos de Desarrollo Sostenible en 2015. Los países que progresan en el logro de la CSU también avanzarán hacia las demás metas relacionadas con la salud y los demás objetivos. La buena salud no solo hace posible que los niños aprendan y los adultos se ganen la vida y la gente escapen de la pobreza, sino que también sienta las bases para el desarrollo económico a largo plazo.
     </p>
-	<img src="imagenes/img-9.jpg" width="60%" height="30%" alt="mod4">
-    <img src="imagenes/img-8.jpg" width="60%" height="30%" alt="mod4">
+    <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image42','','imagenes/img-8.jpg',1)"><img src="imagenes/img-9.jpg" width="70%" height="50%" id="Image42"></a> 
     </div>
     <a href="https://www.who.int/es/news-room/fact-sheets/detail/universal-health-coverage-(uhc)"><p align="center">Si quieres saber mas</p></a>
     </div>
@@ -282,8 +299,8 @@ Lograr la CSU es una de las metas que se fijaron los países que adoptaron los O
 <li>La CSU comprende mucho más que solo la salud. Adoptar medidas para alcanzar la cobertura sanitaria universal equivale a adoptar medidas para lograr la equidad, las prioridades en materia de desarrollo y la inclusión y cohesión sociales.</li>
 </ul>
     </p>
-    <div><img src="imagenes/img-10.jpg" width="50%" height="50%" alt="mod5">
-	<img src="imagenes/img-11.jpg" width="80%" height="50%" alt="mod5">
+    <div>
+    <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image41','','imagenes/img-11.jpg',1)"><img src="imagenes/img-10.jpg" width="70%" height="50%" id="Image41"></a> 
     </div>
     <a href="https://www.who.int/es/news-room/fact-sheets/detail/universal-health-coverage-(uhc)"><p align="center">Ir a la pagina</p></a>
     </div>
